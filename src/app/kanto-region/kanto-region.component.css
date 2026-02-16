@@ -1,0 +1,43 @@
+.region-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  .region-section h2 {
+    margin-bottom: 1.5rem;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 1rem;
+    justify-items: center;
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    background-color: #eb7070;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .card p {
+    margin: 0.25rem 0;
+  }
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+  }
+  .card li {
+    font-size: 0.9rem;
+  }
+  .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;  
+  margin-bottom: 1rem;
+}
