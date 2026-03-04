@@ -1,0 +1,22 @@
+<section class="region-section">
+    <h2>Hoenn Gym Leaders</h2>
+
+    <div class="card-grid">
+      @for (leader of hoennLeaders(); track leader.name) {
+        <div class="card">
+          <h3>{{ leader.name }}</h3>
+          <p><strong>Location:</strong> {{ leader.location }}</p>
+          <p><strong>Badge:</strong> {{ leader.badge }}</p>
+          <p><strong>Specialty:</strong>{{ leader.specialty }}</p>
+  
+          <ul>
+            @for (member of leader.team; track member.pokemon) {
+              <li>{{ member.pokemon }} – Lv. {{ member.level }}</li>
+            }
+          </ul>
+        </div>
+      
+      }
+    </div>
+  </section>
+  
